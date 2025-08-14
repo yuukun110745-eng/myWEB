@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* 選單 */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .menu a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+section{
+    height: 100vh;
+    margin-bottom: 20px;   
+    padding-top: 150px; 
+}
+
+.col1,
+.col2,
+.col3 {
+    display: flex;
+    /* 左右貼邊，其餘平均分配 */
+    /* justify-content: space-between; */
+    justify-content: left;
+    flex-wrap: wrap;
+    /*啟動換行*/
+}
+
+.box {
+    background-color: #ccc;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.noPic {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+/* 圖片設定 */
+.box img {
+    width: 100%;
+}
+
+/* 圖片下方的內容區 */
+.box-body {
+    padding: 10px;
+}
+
+/* box標題 */
+.box-body h2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+/* box段落 */
+.box-body p {
+    font-size: 18px;
+    line-height: 1.8;
+}
